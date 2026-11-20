@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "id": "nyaaclient",
+  "version": "${version}",
+  "name": "Nyaa Client",
+  "description": "Client-side utility client for Minecraft 1.21.1 with a module system, ClickGUI, HUD and JSON config.",
+  "authors": ["Nyaa Client"],
+  "license": "All-Rights-Reserved",
+  "icon": "assets/nyaaclient/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": ["com.nyaaclient.NyaaClient"]
+  },
+  "mixins": ["nyaaclient.mixins.json"],
+  "depends": {
+    "fabricloader": ">=0.16.0",
+    "minecraft": "~1.21.1",
+    "java": ">=21",
+    "fabric-api": "*"
+  }
+}
